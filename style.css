@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: black;
+    background-color: white;
     color: goldenrod;
 }
 
@@ -96,6 +96,7 @@ article img, article video {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
+    width: 500px;
 }
 
 summary {
@@ -189,4 +190,35 @@ meter[value="3"]::-moz-range-progress {
 meter[value="4"]::-moz-range-progress,
 meter[value="5"]::-moz-range-progress {
     background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+
+#inspirasi-resep {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+#resep-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.kartu-resep {
+    background-color: #ffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.kartu-resep img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kartu-resep h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
 }
